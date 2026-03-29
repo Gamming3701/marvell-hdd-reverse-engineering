@@ -28,13 +28,13 @@ struct __attribute__((packed)) Header
 ```
 kudos to [malwaretech](https://www.malwaretech.com/2015/04/hard-disk-firmware-hacking-part-1.html) for figuring it out.
 
-compression roughly is very likely some custom one.
+compression is very likely some custom one.
 
 ### RTOS
-not really much to say about it. it looks very different in different vendors. i assume there's some kind of BSP and vendors customize them.
+not really much to say about it. it looks very different in different vendors. i assume there's some kind of BSP and then vendors customize it.
 
 ### JTAG
-cp15 doesn't work properly. MMU/caches status not reported properly.
+cp15 doesn't work properly. MMU/caches status not reported properly in OpenOCD.
 
 ## WD3200AAKS (fried, rest in piss)
 ### SoC
@@ -249,7 +249,7 @@ ENG>
 ```
 
 ## Notes
-\* - i have no idea if the RTOS has actual kernel/userspace split, but every time i halt CPU it usually runs at vectors. i assume vectors are placed near the 'core' functions are used. though 'kernel' calls to the 'userspace' for printf. lol.
+\* - i have no idea if the RTOS has actual kernel/userspace split, but every time i halt CPU it usually runs at vectors. i assume vectors are placed near the 'core' functions. though 'kernel' calls to the 'userspace' for printf. lol.
 
 ## Linux
 yes you can boot Linux on this thing. currently tested only on 88i9122, but may work on 88i8846 too. halt ONLY after RTOS is ready. openocd commands:
@@ -277,7 +277,6 @@ status:
 it would be very hard to figure out some things myself. honorable mention to resources which helped me a lot.
 - [88i8846 research](https://www.malwaretech.com/2015/04/hard-disk-firmware-hacking-part-1.html)
 - [88i6545/88i6745n forum thread](https://forum.hddguru.com/viewtopic.php?f=13&t=20324)
-
 
 ## License
 this readme and images under [CC 4.0 SA](./LICENSE.CC), openocd configs under [AGPLv3](./LICENSE.AGPL) 
