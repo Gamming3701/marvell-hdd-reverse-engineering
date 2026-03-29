@@ -49,7 +49,7 @@ TW
 
 | Component | Details | Notes |
 | :-- | :--: | :--: |
-| CPU | 2x Feroceon ARMv6TE(?) (AMP, but may be reprogrammed to SMP in the RTOS) | no idea if it's v5 or v6 |
+| CPU | 2x Feroceon ARMv6TEJ(?) (AMP, but may be reprogrammed to SMP in the RTOS) | no idea if it's v5 or v6 |
 
 iomap:
 | HW | Address | Notes |
@@ -122,7 +122,7 @@ TW
 
 | Component | Details | Notes |
 | :-- | :--: | :--: |
-| CPU | 2x Feroceon ARMv6TE(?) (AMP, but may be reprogrammed to SMP in the RTOS) | no idea if it's v5 or v6, linux says v6TE |
+| CPU | 2x Feroceon ARMv6TEJ(?) (AMP, but may be reprogrammed to SMP in the RTOS) | no idea if it's v5 or v6, linux says v6TEJ |
 
 seems to be newer revision of 88i8846's cores
 
