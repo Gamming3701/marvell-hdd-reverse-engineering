@@ -1,5 +1,13 @@
 this is my attempt to reverse engineer Marvell HDD SoCs and run Linux on them
 
+SoCs:
+- [Marvell 88i8846](#wd3200aaks-fried-rest-in-piss)
+- [Marvell 88i9122](#samsung-hd204ui)
+
+Potential SoCs for future:
+- Marvell 88i6725S-TFJ1 (paired with 8MB RAM, booting Linux should be doable but painful; lot of unlabeled pads near the SoC, JTAG discovery might be painful too; HDD: Samsung HD200HJ)
+- Marvell 88i6523-LFH1 (paired with 2MB RAM, i don't think it's possible to boot modern kernel on this thing; JTAG is visible; HDD: Samsung SP0842N, not even SATA)
+
 ## General info
 ### Boot chain
 roughly looks like this:
@@ -114,7 +122,7 @@ some very small amount of characters. the drive is not talkative at all.
 ![SoC](./88i9122/soc.jpg)
 
 ```
-Marvell 8819122-TFJ2
+Marvell 88i9122-TFJ2
 P4T9050.2
 1102 B2E
 TW
@@ -252,7 +260,7 @@ ENG>
 \* - i have no idea if the RTOS has actual kernel/userspace split, but every time i halt CPU it usually runs at vectors. i assume vectors are placed near the 'core' functions. though 'kernel' calls to the 'userspace' for printf. lol.
 
 ## Linux
-yes you can boot Linux on this thing. currently tested only on 88i9122, but may work on 88i8846 too. halt ONLY after RTOS is ready. openocd commands:
+yes you can boot Linux on this thing (not pushed yet because i want to get it booting to the shell first :P). currently tested only on 88i9122, but may work on 88i8846 too. halt ONLY after RTOS is ready. openocd commands:
 ```
 targets 0
 halt
