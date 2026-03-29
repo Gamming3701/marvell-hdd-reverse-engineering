@@ -133,7 +133,7 @@ iomap:
 | SRAM | 0x04000000 - 0x04007fff | SRAM, used for stack |
 | DRAM | 0x24000000 - 0x25000000 | RTOS userspace\*; mirrored at 0x10000000, no idea which one is 'real' base; 16 MB, rest unknown |
 | UART (not 8250-compatible by layout) | 0x1C00A620 | + 4 for THR, + 0x10 for LSR |
-| Timer | 0x1c00a200 - 0x1c00a214 (?) | has at least 3 timers |
+| Timer | 0x1c00a200 - 0x1c00a250 | has 10 timers, timer_ctrl(n) = (n * 0x8), timer_val(n) = ((n * 0x8) + 0x4) |
 | BootROM | 0xffff0000 - 0xffffffff | CPU0 uses dummy bootrom for debugging, CPU1 switches to the bootloader and RTOS |
 
 ### PMIC
