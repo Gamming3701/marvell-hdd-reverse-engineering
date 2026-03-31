@@ -1,12 +1,12 @@
 this is my attempt to reverse engineer Marvell HDD SoCs and run Linux on them
 
-Marvell 88iXXXX SoCs were used in consumer HDDs in 2005~2011. newer SoCs (apparently after 88i94XX?) are using Cortex R designs instead of in-house ARMv5 (or v6?) compatible CPUs.
+Marvell 88iXXXX SoCs were used in consumer HDDs in 2005~2011. newer SoCs (apparently after 88i94XX?) are using Cortex R designs instead of in-house ARMv6 compatible CPUs.
 
 there's no datasheets, product briefs or SDKs available for them. although HDDs with these often have JTAG pads visible, as well as lack of secure boot, which makes them pretty good target for learning compared to newer obscure Cortex R chips (like AVAGO).
 
 based on my HDD collection, Samsung was a primary OEM using Marvell SoCs. WD ditched their custom ARM(?) SoCs in flavor of Marvell, but it's not clear how long they were using it. Seagate was staying at ST SoCs instead (or were they using Marvell too? i have only one old Seagate HDD).
 
-upstream Linux has support for the Marvell Orion/Kirkwood families, but their iomap is really different compared to these.
+upstream Linux has support for the Marvell Orion/Kirkwood families, but their iomap is really different compared to these. As well as upstream expects Feroceon to be ARM v5, however, this variant supports REV instruction, which makes me assume it's actually v6.
 
 SoCs:
 - [Marvell 88i8846](#wd3200aaks-fried-rest-in-piss)
@@ -65,7 +65,7 @@ TW
 
 | Component | Details | Notes |
 | :-- | :--: | :--: |
-| CPU | 2x Feroceon ARMv6TEJ(?) (AMP, but may be reprogrammed to SMP in the RTOS) | no idea if it's v5 or v6 |
+| CPU | 2x Feroceon ARMv6TEJ (AMP, but may be reprogrammed to SMP in the RTOS) | |
 
 iomap:
 | HW | Address | Notes |
@@ -138,7 +138,7 @@ TW
 
 | Component | Details | Notes |
 | :-- | :--: | :--: |
-| CPU | 2x Feroceon ARMv6TEJ(?) (AMP, but may be reprogrammed to SMP in the RTOS) | no idea if it's v5 or v6, linux says v6TEJ |
+| CPU | 2x Feroceon ARMv6TEJ (AMP, but may be reprogrammed to SMP in the RTOS) | linux says v6TEJ |
 
 seems to be newer revision of 88i8846's cores
 
