@@ -13,7 +13,7 @@ SoCs:
 - [Marvell 88i9122](#samsung-hd204ui)
 
 Potential SoCs for future:
-- Marvell 88i6725S-TFJ1 (paired with 8MB RAM, booting Linux should be doable but painful; lot of unlabeled pads near the SoC, JTAG discovery might be painful too; HDD: Samsung HD200HJ)
+- ~~Marvell 88i6725S-TFJ1 (paired with 8MB RAM, booting Linux should be doable but painful; lot of unlabeled pads near the SoC, JTAG discovery might be painful too; HDD: Samsung HD200HJ)~~ fried somehow
 - Marvell 88i6523-LFH1 (paired with 2MB RAM, i don't think it's possible to boot modern kernel on this thing; JTAG is visible; HDD: Samsung SP0842N, not even SATA)
 
 ## General info
